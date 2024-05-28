@@ -12,7 +12,7 @@ const About = () => {
             About
           </p>
         </div>
-      <p className="text-xl mt-20">
+      <p className="text-base sm:text-lg md:text-xl leading-relaxed">
         As an aspiring full stack web developer, I am driven by a passion for
         crafting dynamic and intuitive digital experiences. Equipped with
         foundational knowledge in both front-end and back-end technologies,
