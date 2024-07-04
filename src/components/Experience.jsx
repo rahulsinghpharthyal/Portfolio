@@ -64,22 +64,20 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full min-h-screen py-10"
+      className="w-full min-h-screen sm:min-h-[50vh] bg-gradient-to-b from-gray-800 to-black text-white py-10"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            Experience
-          </p>
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">Experience</p>
           <p className="py-6 text-lg">These are the technologies I've worked with</p>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-4 sm:px-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-4 sm:px-0">
           {experience.map(({ id, src, title, style }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-4 rounded-lg ${style}`}
             >
-              <img src={src} alt={title} className="w-20 mx-auto"></img>
+              <img src={src} alt={title} className="w-20 mx-auto" />
               <p className="mt-4 text-base font-medium">{title}</p>
             </div>
           ))}
