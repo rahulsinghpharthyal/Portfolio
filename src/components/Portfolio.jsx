@@ -11,23 +11,8 @@ const Portfolio = () => {
     {
       id: 2,
       src: flipkart
-    },
-    {
-      id: 3,
-      src: weather
-    },
-    {
-      id: 4,
-      src: weather
-    },
-    {
-      id: 5,
-      src: weather
-    },
-    {
-      id: 6,
-      src: weather
-    },
+    }
+  
   ];
 
   return (
