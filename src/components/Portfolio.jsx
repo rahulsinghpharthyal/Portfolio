@@ -39,7 +39,7 @@ const Portfolio = () => {
               <img src={val.src} alt="thumbnail" className="rounded-t-md duration-300 hover:scale-105 w-full h-48 object-cover" />
               <div className="flex justify-center">
                 <Link
-                  href={val.demo}
+                  to={val.demo}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-1/2 py-3 m-2 text-center bg-blue-500 rounded-md text-white hover:bg-blue-600 duration-200 hover:scale-105"
