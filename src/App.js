@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
@@ -6,20 +7,17 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 
-
- 
 function App() {
   return (
-   <>
-  <Navbar/>
-  <Home/>
-  <About/>
-  <Portfolio/>
-  <Experience/>
-  <Contact/>
-  <SocialLinks/>
-
-   </>
+    <BrowserRouter>
+      <Navbar />
+      <Home />
+      <About />
+      <Portfolio />
+      <Experience />
+      <Contact />
+      <SocialLinks />
+    </BrowserRouter>
   );
 }
 
