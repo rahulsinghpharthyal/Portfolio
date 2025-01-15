@@ -10,13 +10,15 @@ import SocialLinks from "./components/SocialLinks";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
-      <SocialLinks />
+      <div className=" bg-gradient-to-b from-gray-800 to-black">
+        <Navbar />
+        <Home />
+        <About />
+        <Portfolio />
+        <Experience />
+        <Contact />
+        <SocialLinks />
+      </div>
     </BrowserRouter>
   );
 }
