@@ -19,7 +19,7 @@ const Portfolio = () => {
     {
       id: 3,
       src: voting_application,
-      demo: 'https://votefornation.netlify.app/',
+      demo: 'https://voteforbharat.netlify.app/',
     },
   ];
 
