@@ -1,7 +1,7 @@
 import React from "react";
 import flipkart from "../assets/portfolio/flipkart.png";
 import e_commerce from "../assets/portfolio/e-commerce.png";
-import voting_application from "../assets/portfolio/voting_application.png";
+import voting_application from "../assets/portfolio/voting_application_01.png";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
