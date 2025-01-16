@@ -10,7 +10,7 @@ import SocialLinks from "./components/SocialLinks";
 function App() {
   return (
     <BrowserRouter>
-      <div className=" bg-gradient-to-b from-gray-800 to-black">
+      <div className=" bg-gradient-to-b from-gray-900 to-gray-900">
         <Navbar />
         <Home />
         <About />
