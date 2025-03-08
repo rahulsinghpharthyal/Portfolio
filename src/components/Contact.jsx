@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Contact = () => {
   return (
-    <div name="contact" className='w-full min-h-screen sm:min-h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white'>
-      <div className='max-w-screen-lg mx-auto p-4 flex flex-col w-full h-screen'>
-        <div className='pb-8 mt-32 sm:mt-0'>
-          <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Contact</p>
+    <div name="contact" className='w-full min-h-screen bg-gradient-to-b from-gray-800 to-gray-black p-4 text-white flex justify-center items-center px-4'>
+      <div className='max-w-screen-lg w-full'>
+        <div className='pb-8 text-center sm:text-left'>
+          <p className='text-3xl sm:text-4xl font-bold border-b-4 border-gray-500 inline-block'>Contact</p>
           <p className='py-6 text-lg'>Submit the form below to get in touch with me.</p>
         </div>
         <div className='flex justify-center items-center'>

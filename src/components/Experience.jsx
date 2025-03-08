@@ -62,14 +62,12 @@ const Experience = () => {
   ];
 
   return (
-    <div
-      name="experience"
-      className="w-full min-h-screen sm:min-h-[50vh] bg-gradient-to-b from-gray-800 to-black text-white py-10"
+    <div name="experience" className="w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white flex justify-center items-center px-4 py-10"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col w-full h-screen">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">Experience</p>
-          <p className="py-6 text-lg">These are the technologies I've worked with</p>
+      <div className="max-w-screen-lg w-full">
+        <div className="pb-8 text-center sm:text-left">
+          <p className="text-3xl sm:text-4xl font-bold border-b-4 border-gray-500 inline-block">Experience</p>
+          <p className="py-6 text-lg">These are the technologies I've worked with:</p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-4 sm:px-0">
           {experience.map(({ id, src, title, style }) => (

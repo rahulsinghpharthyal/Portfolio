@@ -26,6 +26,10 @@ const Navbar = () => {
         },
         {
             id: 5,
+            link: 'certificates'
+        },
+        {
+            id: 6,
             link: 'contact'
         },
     ];
@@ -33,8 +37,8 @@ const Navbar = () => {
     return (
         <div className='flex justify-between items-center w-full h-20 text-[#f6f6f6] text-[20px] bg-black fixed px-4'>
             <div className='flex items-center'>
-                <h1 className='text-lg font-signature ml-2 mt-3 lg:text-5xl'>Rahul Pharthyal</h1>
-                <img src={ProfileImg} alt="profile" className='ml-10 mb-2 w-12 h-12 rounded-lg border-2 border-white md:hidden ' />
+                <h1 className='text-3xl font-signature ml-2 mt-3 lg:text-5xl'>Rahul Pharthyal</h1>
+                {/* <img src={ProfileImg} alt="profile" className='ml-10 mb-2 w-12 h-12 rounded-lg border-2 border-white md:hidden ' /> */}
             </div>
             <ul className='hidden md:flex'>
                 {links.map(({ id, link }) => (
@@ -44,7 +48,7 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
-            <div onClick={() => setNav(!nav)} className='cursor-pointer pr-4 z-10 text-white-500 md:hidden'>
+            <div onClick={() => setNav(!nav)} className='cursor-pointer z-999 text-white-500 md:hidden'>
                 {nav ? <FaTimes size={30} />
                     :
                     <FaBars size={30} />

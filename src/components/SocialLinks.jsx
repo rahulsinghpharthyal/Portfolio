@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaArrowAltCircleLeft, FaArrowAltCircleRight  } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const SocialLinks = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,19 +47,32 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/Rahul Pharthyal Resume IT.pdf",
-      style: "rounded-br-md",
+      href: "https://docs.google.com/document/d/1h_J0TPqZ_1avOBaTQTEJ1p_uKQLN7G34/edit?usp=sharing&ouid=107792749908186382897&rtpof=true&sd=true",
       download: true,
     },
+    {
+      id: 5,
+      child: (
+        <>
+        WhatsApp <FaWhatsapp size={30}/>
+        </>
+      ),
+      href: "https://wa.me/6397104144?text=Hello",  // formet is `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      style: "rounded-br-md",
+    }
   ];
 
   return (
-    <div className="fixed top-[35%] left-0 lg:top-[50%] lg:flex">
+    <div className="fixed top-[15%] left-0 lg:top-[50%] lg:flex">
       <button
         onClick={toggleLinks}
-        className={`lg:hidden flex justify-center items-center w-1 h-10 bg-gray-500 text-white rounded-r-md`}
+        className={`lg:hidden flex justify-center items-center text-white rounded-r-lg`}
       >
-        {isOpen ? '' : ''}
+        {isOpen ? 
+        <FaArrowAltCircleLeft size={20}/>
+        : 
+        <FaArrowAltCircleRight size={20}/>
+        }
       </button>
       <ul className={`${isOpen ? 'block' : 'hidden'} lg:block`}>
         {links.map(({ id, child, href, style, download }) => (
@@ -66,15 +80,15 @@ const SocialLinks = () => {
             key={id}
             className={`flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500 ${style}`}
           >
-            <a
-              href={href}
+            <Link
+              to={href}
               className="flex justify-between items-center w-full text-white"
               download={download}
               target="_blank"
               rel="noreferrer"
             >
               {child}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
