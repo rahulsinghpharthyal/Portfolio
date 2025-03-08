@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from "react-scroll";
-import ProfileImg from '../assets/heropng.png';  // Assuming you have a profile image at this path
+//import ProfileImg from '../assets/heropng.png';  // Assuming you have a profile image at this path
 
 const Navbar = () => {
 
