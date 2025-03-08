@@ -14,7 +14,7 @@ const Home = () => {
           <h2 className="text-center text-4xl sm:text-6xl md:text-7xl font-bold text-white">
             I'm a Full Stack Developer
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-500 py-4 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-500 py-4 leading-relaxed mt-10">
             As a passionate and innovative full stack developer, I bring fresh perspectives and a hunger for learning to every project. Proficient in both front-end and back-end technologies, I thrive in collaborative environments, eager to contribute and grow while delivering efficient and impactful solutions.
           </p>
           <div>

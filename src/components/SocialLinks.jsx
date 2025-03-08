@@ -63,7 +63,7 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="fixed top-[15%] left-0 lg:top-[50%] lg:flex">
+    <div className="fixed top-[15%] left-0 lg:top-[35%] lg:flex">
       <button
         onClick={toggleLinks}
         className={`lg:hidden flex justify-center items-center text-white rounded-r-lg`}
