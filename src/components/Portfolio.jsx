@@ -31,7 +31,7 @@ const Portfolio = () => {
       <div className="max-w-screen-lg w-full">
         <div className="pb-8 text-center sm:text-left">
           <p className="text-3xl sm:text-4xl font-bold border-b-4 border-gray-500 inline-block" >Portfolio</p>
-          <p className="py-6 text-lg">Check out some of my projects right here.</p>
+          <p className="py-6 text-lg">I have honed my skills through freelance projects gaining real-world exposure that has significantly enhanced my technical abilities. Additionally, my personal projects showcase my expertise and creativity in web development.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-0">
           {portfolio.map((val) => (

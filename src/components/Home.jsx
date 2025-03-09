@@ -11,12 +11,12 @@ const Home = () => {
           <img src={HeroImg} alt="my profile" className="rounded-full h-32 w-32 md:h-64 md:w-64 mx-auto"/>
         </div>
         <div className="pb-8 text-left">
-          <h2 className="text-center text-4xl sm:text-6xl md:text-7xl font-bold text-white">
+          <h2 className="text-center text-4xl sm:text-6xl md:text-7xl font-bold text-white animate-slideIn">
             I'm a Full Stack Developer
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-500 py-4 leading-relaxed mt-10">
-            As a passionate and innovative full stack developer, I bring fresh perspectives and a hunger for learning to every project. Proficient in both front-end and back-end technologies, I thrive in collaborative environments, eager to contribute and grow while delivering efficient and impactful solutions.
-          </p>
+          As a full-stack developer, I bring new ideas and a love for learning to every project. Skilled in both front-end and back-end technologies, I work well with teams and always aim to create effective solutions.
+         </p>
           <div>
             <Link to="portfolio" smooth duration={500} offset={-100} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500">
               Portfolio

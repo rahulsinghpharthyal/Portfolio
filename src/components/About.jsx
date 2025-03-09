@@ -29,8 +29,8 @@ const About = () => {
           </p>
 
           <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-            I have also worked on freelance projects, including MNNLR Company and
-            Genius Web Solution. These experiences have given me real-world
+            I have also worked on freelance projects, including <b>Man Need New Life Resource (MNNLR) </b>and{" "}
+            <b>Genius Web Solution</b>. These experiences have given me real-world
             exposure and helped me improve my technical skills.
           </p>
 
